@@ -9,10 +9,10 @@ function preload(){
 
 
 function setup() {
-  canvas = createCanvas(380, 380);
+  canvas = createCanvas(800, 700);
   canvas.center();
   video = createCapture(VIDEO);
-  video.size(380,380);
+  video.size(800,600);
   video.hide();
 }
 function start(){
@@ -39,7 +39,7 @@ function gotResult(error, results) {
 
 
 function draw() {
-  image(video, 0, 0, 380, 380);
+  image(video, 0, 0, 800, 600);
       if(status != "")
       {
         r =  random(255);
